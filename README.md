@@ -17,7 +17,7 @@ This Power BI project analyzes the **HCAHPS (Hospital Consumer Assessment of Hea
 ![HCAHPS Dashboard](https://github.com/user-attachments/assets/146ba999-ae70-46ef-a415-1efc363dc365)
 
 # 🔍 SQL Queries
-
+The SQL queries are available in the 'hcahps sql code.sql' file in the project repository. 
 
 # 📈 Insights
 
