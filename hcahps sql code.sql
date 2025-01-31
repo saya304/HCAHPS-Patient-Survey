@@ -3,11 +3,6 @@ HCAHPS Patient Survey
 
 National & state-level scores from 2013 to 2022 for the Hospital Consumer Assessment of Healthcare Providers and Systems (HCAHPS) survey, a national, standardized survey of hospital patients about their experiences during a recent inpatient hospital stay.
 
-Recommended Analysis:
-1) Have hospitals made improvements in their quality of care over the past 9 years?
-2) Are there any specific areas where hospitals have made more progress than others?
-3) Are there still any major areas of opportunity?
-4)What recommendations can you make to hospitals to help them further improve the patient experience? 
 */
 
 --Column 'Completed_Survey' of Table 'Responses' has some string and integer values
@@ -59,14 +54,14 @@ where COLUMN_NAME like '%response_rate%'
 
 --nationwide result
 
-SELECT  
+SELECTÂ  
    DATEPART(YEAR, [Start_Date]) as 'Period',
     Measure,
-    Type,
-    Question,
-    Bottom_box_Answer as Answer,
-    Bottom_box_Percentage as 'Rating (%)',
-    'Bottom' as Response
+Â Â Â  Type,
+Â Â Â  Question,
+Â Â Â  Bottom_box_Answer as Answer,
+Â Â Â  Bottom_box_Percentage as 'Rating (%)',
+Â Â Â  'Bottom' as Response
 FROM national_results nr
 JOIN measures m ON nr.Measure_ID = m.Measure_ID
 JOIN questions q ON nr.Measure_ID = q.Measure_ID
@@ -74,14 +69,14 @@ JOIN reports rep ON nr.Release_Period = rep.Release_Period
 
 UNION
 
-SELECT  
+SELECTÂ  
    DATEPART(YEAR, [Start_Date]) as 'Period',
    Measure,
-    Type,
-    Question,
-    Middle_box_Answer as Answer,
-    Middle_box_Percentage as 'Rating (%)',
-    'Middle' as Response
+Â Â Â  Type,
+Â Â Â  Question,
+Â Â Â  Middle_box_Answer as Answer,
+Â Â Â  Middle_box_Percentage as 'Rating (%)',
+Â Â Â  'Middle' as Response
 FROM national_results nr
 JOIN measures m ON nr.Measure_ID = m.Measure_ID
 JOIN questions q ON nr.Measure_ID = q.Measure_ID
@@ -89,14 +84,14 @@ JOIN reports rep ON nr.Release_Period = rep.Release_Period
 
 UNION
 
-SELECT  
+SELECTÂ  
    DATEPART(YEAR, [Start_Date]) as 'Period',
    Measure,
-    Type,
-    Question,
-    Top_box_Answer as Answer,
-    Top_box_Percentage as 'Rating (%)',
-    'Top' as Response
+Â Â Â  Type,
+Â Â Â  Question,
+Â Â Â  Top_box_Answer as Answer,
+Â Â Â  Top_box_Percentage as 'Rating (%)',
+Â Â Â  'Top' as Response
 FROM national_results nr
 JOIN measures m ON nr.Measure_ID = m.Measure_ID
 JOIN questions q ON nr.Measure_ID = q.Measure_ID
