@@ -21,7 +21,7 @@ The SQL queries are available in the 'hcahps sql code.sql' file in the project r
 
 The SQL script **cleans and standardizes** the HCAHPS patient survey data by converting mixed data types into consistent numeric values. It extracts **nationwide patient satisfaction trends** using SQL joins and unions. Views are created to compare **Top Box Ratings** between **2013 and 2022** for each state. A final view calculates the **improvement in patient satisfaction** over time. The cleaned data is ready for **Power BI visualization**. 🚀
 
-# 📈 Recommended Analysis
+# 📈 Analysis
 **1) Have hospitals made improvements in their quality of care over the past 9 years?**
 
 The quality of care in hospitals showed gradual improvement from 2014 to 2019. However, there was a noticeable decline after 2020. This indicates that while hospitals were making progress in enhancing patient experiences, external factors (possibly the COVID-19 pandemic) may have contributed to the decline in quality post-2020. Overall, hospitals have not made any significant improvements over the past nine years.
