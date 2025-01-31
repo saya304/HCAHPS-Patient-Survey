@@ -19,6 +19,8 @@ This Power BI project analyzes the **HCAHPS (Hospital Consumer Assessment of Hea
 # 🔍 SQL Queries
 The SQL queries are available in the 'hcahps sql code.sql' file in the project repository. 
 
+The SQL script **cleans and standardizes** the HCAHPS patient survey data by converting mixed data types into consistent numeric values. It extracts **nationwide patient satisfaction trends** using SQL joins and unions. Views are created to compare **Top Box Ratings** between **2013 and 2022** for each state. A final view calculates the **improvement in patient satisfaction** over time. The cleaned data is ready for **Power BI visualization**. 🚀
+
 # 📈 Insights
 
 
